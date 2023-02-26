@@ -96,7 +96,7 @@ class VNet(object):
 
 
     def train(self):
-        print self.params['ModelParams']['dirTrain']
+        print(self.params['ModelParams']['dirTrain'])
 
         #we define here a data manage object
         self.dataManagerTrain = DM.DataManager(self.params['ModelParams']['dirTrain'],
@@ -110,7 +110,7 @@ class VNet(object):
 
         assert howManyGT == howManyImages
 
-        print "The dataset has shape: data - " + str(howManyImages) + ". labels - " + str(howManyGT)
+        print("The dataset has shape: data - " + str(howManyImages) + ". labels - " + str(howManyGT))
 
         test_interval = 50000
         # Write a temporary solver text file because pycaffe is stupid

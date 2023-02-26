@@ -54,7 +54,7 @@ def sitk_show(nda, title=None, margin=0.0, dpi=40):
 
     plt.set_cmap("gray")
     for k in range(0,nda.shape[2]):
-        print "printing slice "+str(k)
+        print("printing slice " + str(k))
         ax.imshow(np.squeeze(nda[:,:,k]),extent=extent,interpolation=None)
         plt.draw()
         plt.pause(0.1)
